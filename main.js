@@ -38,9 +38,7 @@ function addNumber(number) {
 	if (number === ".") {
 		comma.classList.add("disabled")
 		if (handleComma() === true) return
-		else {
-			displayMain.textContent += number;
-		}
+		else displayMain.textContent += number;
 		return;
 	}
 	displayMain.textContent += number;
@@ -57,9 +55,7 @@ function handleComma() {
 function handleAction(action) {
 	if (action === "Clear") {
 		shouldReset ? clearMemory() : clearDisplay();
-	} else if (action === "Delete") {
-		deleteNumber();
-	};
+	} else if (action === "Delete") deleteNumber();
 }
 function handleOperator(operator) {
 	if (displayMain.textContent === "") return;
@@ -95,7 +91,7 @@ function handleKeyboard(e) {
 }
 
 function roundedResult() {
-	return (operate(currentOperator, firstOperand, secondOperand)).toFixed(6);
+	return (operate(currentOperator, firstOperand, secondOperand));
 }
 const operate = (operator, a, b) => {
 	if (operator === undefined) return;
