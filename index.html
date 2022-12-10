@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<script src="./main.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Basic calculator</h1>
+	</header>
+	<main>
+		<section id="calc">
+			<section id="calc-display">
+				<p class="trail"></p>
+				<p class="main"></p>
+			</section>
+			<section id="calc-btns">
+				<section class="upper-operators">
+					<button data-action="Clear" aria-label="clear calculation">Clear</button>
+					<button data-action="Delete" aria-label="delete current number">Delete</button>
+				</section>
+				<section class="right-operators">
+					<button data-operator="/" aria-label="divide">/</button>
+					<button data-operator="*" aria-label="multiply">*</button>
+					<button data-operator="-" aria-label="substract">-</button>
+					<button data-operator="+" aria-label="add">+</button>
+				</section>
+				<section class="numbers">
+					<button data-number="7">7</button>
+					<button data-number="8">8</button>
+					<button data-number="9">9</button>
+					<button data-number="4">4</button>
+					<button data-number="5">5</button>
+					<button data-number="6">6</button>
+					<button data-number="1">1</button>
+					<button data-number="2">2</button>
+					<button data-number="3">3</button>
+					<button data-number=".">.</button>
+					<button data-number="0">0</button>
+					<button data-equals="=">=</button>
+				</section>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<h3>MadisKalashnikov <a href="https://github.com/MadisKalashnikov" target="_blank">github</a></h3>
+	</footer>
+</body>
+</html>
