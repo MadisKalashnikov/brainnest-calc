@@ -91,7 +91,7 @@ function handleKeyboard(e) {
 }
 
 function roundedResult() {
-	return (operate(currentOperator, firstOperand, secondOperand));
+	return (operate(currentOperator, firstOperand, secondOperand)).toFixed(6);
 }
 const operate = (operator, a, b) => {
 	if (operator === undefined) return;
